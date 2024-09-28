@@ -2,56 +2,54 @@ import sys
 import math
 
 def is_prime(num):
-    if num <= 1:
-        return False
-    if num <= 3:
-        return True
-    if num % 2 == 0 or num % 3 == 0:
-        return False
-    i = 5
-    while i * i <= num:
-        if num % i == 0 or num % (i + 2) == 0:
-            return False
-        i += 6
-    return True
+	if num <= 1:
+		return False
+	if num <= 3:
+		return True
+	if num % 2 == 0 or num % 3 == 0:
+		return False
+	i = 5
+	while i * i <= num:
+		if num % i == 0 or num % (i + 2) == 0:
+			return False
+		i += 6
+	return True
 
 def main():
-    # Recebe o número N da linha de comando
-    if len(sys.argv) != 2:
-        print("Uso: python Goldbach.py <número inteiro>")
-        return
-    
-    N = int(sys.argv[1])
+	# Input an even number N
+	if len(sys.argv) != 2:
+		print("Usage: python GoldBach.py <even integer number>")
+		return
 
-    # Verifica se N é um número par maior que 6
-    if (N>6 & N%2 !=0):
-        print("Número ímpar. Entre com um número par maior que 2.")
-        return
+	N = int(sys.argv[1])
 
-    # Loop de i de 1 até Q+1
-    Q = (N//6)
-    for i in range(1,Q+1):
-        
-        # print(f" com i ={i}")     
-        # Verifica P = 6 * Q + 1
-        P = 6 * i + 1 
-        if is_prime(P):
-            F = N - P
-            if is_prime(F):
-                print(f"N = P + F: {N} = {P} + {F} com i = {i}")
-                return
+	# Verify if N is even and greater than 6
+	if (N<=6 or N%2 !=0):
+		print("Odd number or <= 6. You should choose an even number greater than 2")
+		return
 
-        # Verifica P = 6 * Q - 1
-            
-        P = 6 * i - 1 
-        if is_prime(P):
-            F = N - P
-            if is_prime(F):
-                print(f"N = P + F: {N} = {P} + {F} com i = {i}")
-                return
+	# Loop: i from 1 to Q
+	Q = (N//6)
 
-    print("Nenhuma combinação encontrada.")
+	for i in range(1,Q+1):
+
+		# Verify if  P = 6 * i + 1 is prime
+		P = 6 * i + 1
+		if is_prime(P):
+			F = N - P
+			if is_prime(F):
+				print(f"N = P + F: {N} = {P} + {F} and i = {i}")
+				return
+
+		# Verify if P = 6 * i - 1 is prime
+		P = 6 * i - 1
+		if is_prime(P):
+			F = N - P
+			if is_prime(F):
+				print(f"N = P + F: {N} = {P} + {F} and i = {i}")
+				return
+
+	print(f"The number {N} cannot be expressed as the sum of two prime numbers. In this case, you have just disproved Goldbach's Conjecture. Congratulations!")
 
 if __name__ == "__main__":
-    main()
-
+	main()
