@@ -37,7 +37,7 @@ def main():
 	for i in range(1,Q+1):
 
 		# Verify if  P = 6 * i + 1 is prime
-		P = 6 * i + 1
+		P = 6 * i - 1
 		if is_prime(P):
 			F = N - P
 			if is_prime(F):
@@ -45,7 +45,7 @@ def main():
 				return
 
 		# Verify if P = 6 * i - 1 is prime
-		P = 6 * i - 1
+		P = 6 * i + 1
 		if is_prime(P):
 			F = N - P
 			if is_prime(F):
