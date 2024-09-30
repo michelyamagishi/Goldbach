@@ -18,7 +18,7 @@ def is_prime(num):
 def main():
     # Input the maximum even number N
     if len(sys.argv) != 2:
-        print("Usage: python GoldBach.py <even integer number>")
+        print("Usage: python GoldBach_from_6_to_N.py <even integer number>")
         return
 
     N = int(sys.argv[1])
