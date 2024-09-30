@@ -27,7 +27,10 @@ def main():
 	if (N<=6 or N%2 !=0):
 		print("Odd number or <= 6. You should choose an even number greater than 2")
 		return
-
+	if is_prime(N-3):
+        	print(f"N = P + F: {N} = {3} + {N-3}")
+        	return
+		
 	# Loop: i from 1 to Q
 	Q = (N//6)
 
