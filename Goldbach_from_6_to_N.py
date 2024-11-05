@@ -41,7 +41,7 @@ def main():
 
         if not found:
 
-            for i in range(1, Q):
+            for i in range(1, Q/2):
                 # Check P = 6 * i - 1
                 P = 6 * i + 1
                 if is_prime(P):
