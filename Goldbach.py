@@ -31,10 +31,10 @@ def main():
         	print(f"N = P + F: {N} = {3} + {N-3}")
         	return
 		
-	# Loop: i from 1 to Q
+	# Loop: i from 1 to Q/2
 	Q = (N//6)
 
-	for i in range(1,Q+1):
+	for i in range(1,Q/2):
 
 		# Verify if  P = 6 * i + 1 is prime
 		P = 6 * i - 1
