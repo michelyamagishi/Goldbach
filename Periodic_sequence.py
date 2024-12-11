@@ -35,6 +35,10 @@ def main():
         # Loop: i from 1 to Q
         F = even_num // 6
         
+        ## a(n) = (Q - 2 P) mod 6
+        ## a(n) equivalent a(n+3) mod 6
+        ## Ref: https://www.researchgate.net/publication/384406538_Goldbach's_Conjecture_A_Simple_and_Fast_Algorithm
+        
         if is_prime(even_num-3):
             print(f"{even_num} = {3} + {even_num-3} -> a({even_num//2}) = {((even_num-3)-6) % 6} ")
             found = True
