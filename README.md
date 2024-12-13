@@ -3,4 +3,4 @@ Using the well-known fact that every prime number, except $2$ and $3$, is adjace
 
 python Goldbach.py <even number greater than 6>
 
-The program Goldbach_from_6_to_N_NEW.py uses the new result that (Q-2P) mod 6 generates a periodic function. It is faster than the previous algorithm.
+
