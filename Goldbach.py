@@ -17,7 +17,6 @@ def is_prime(num):
 	return True
 
 def main():
-	periodo = [3, 5, 1]
 	
 	# Input an even number N
 	if len(sys.argv) != 2:
@@ -44,7 +43,7 @@ def main():
 		if is_prime(P):
 			F = N - P
 			T = F % 6
-			if ((T == 1 or T == 5) and (((F-2*P) % 6) == periodo[(N//2) % 3])):
+			if (T == 1 or T == 5) :
 				if is_prime(F):
 					print(f"N = P + F: {N} = {P} + {F} and i = {i}")
 					return
@@ -54,7 +53,7 @@ def main():
 		if is_prime(P):
 			F = N - P
 			T = F % 6
-			if ((T == 1 or T == 5) and (((F-2*P) % 6) == periodo[(N//2) % 3])):
+			if (T == 1 or T == 5):
 				if is_prime(F):
 					print(f"N = P + F: {N} = {P} + {F} and i = {i}")
 					return
