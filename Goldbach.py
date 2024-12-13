@@ -1,3 +1,4 @@
+## this new algorithm uses the result that (Q-2P) mod 6 is a periodic sequence
 import sys
 import math
 
@@ -16,6 +17,8 @@ def is_prime(num):
 	return True
 
 def main():
+	periodo = [3, 5, 1]
+	
 	# Input an even number N
 	if len(sys.argv) != 2:
 		print("Usage: python GoldBach.py <even integer number>")
@@ -31,26 +34,30 @@ def main():
         	print(f"N = P + F: {N} = {3} + {N-3}")
         	return
 		
-	# Loop: i from 1 to Q/2
+	
 	Q = (N//6)
 
-	for i in range(1,Q/2):
+	for i in range(1,Q):
 
 		# Verify if  P = 6 * i + 1 is prime
 		P = 6 * i - 1
 		if is_prime(P):
 			F = N - P
-			if is_prime(F):
-				print(f"N = P + F: {N} = {P} + {F} and i = {i}")
-				return
+			T = F % 6
+			if ((T == 1 or T == 5) and (((F-2*P) % 6) == periodo[(N//2) % 3])):
+				if is_prime(F):
+					print(f"N = P + F: {N} = {P} + {F} and i = {i}")
+					return
 
 		# Verify if P = 6 * i - 1 is prime
 		P = 6 * i + 1
 		if is_prime(P):
 			F = N - P
-			if is_prime(F):
-				print(f"N = P + F: {N} = {P} + {F} and i = {i}")
-				return
+			T = F % 6
+			if ((T == 1 or T == 5) and (((F-2*P) % 6) == periodo[(N//2) % 3])):
+				if is_prime(F):
+					print(f"N = P + F: {N} = {P} + {F} and i = {i}")
+					return
 
 	print(f"The number {N} cannot be expressed as the sum of two prime numbers. In this case, you have just disproved Goldbach's Conjecture. Congratulations!")
 
