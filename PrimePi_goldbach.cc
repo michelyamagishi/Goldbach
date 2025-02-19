@@ -68,6 +68,7 @@ int main(int argc, char const ** argv)
     } //for i
 
     cout<<"END"<<endl;
+    // it is necessary to add 1 because 2 is prime.
     cout<<"Number of primes (<="<<max<<") = "<<primes.size()+1<<endl;
     cout<<"Prime"<<"\t"<< "Frequency"<<endl;
     for( it = dist.begin(); it!=dist.end(); it++)
