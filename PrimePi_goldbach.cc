@@ -46,7 +46,7 @@ int main(int argc, char const ** argv)
     // inicialization of primes
     primes[3]=1;
     cout<<"4 = 2 + 2"<<endl;
-    for( unsigned long int i=6; i<=max; i+=2){
+    for( unsigned long int i=6; i<=max+2; i+=2){
       if (is_prime(i-3)){
          dist[3]+=1;
          primes[i-3]+=1;
