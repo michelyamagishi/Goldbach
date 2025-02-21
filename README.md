@@ -11,7 +11,7 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
 
 
 
-
+---------------------------------------------
 
 
 
