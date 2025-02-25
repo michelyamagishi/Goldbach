@@ -3,9 +3,9 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  numbers $p$ and $q$ such that $n = p + q$. Let $p_n$ be the smallest prime number for which $q_n= n-p_n$ is also a prime. Define the following functions:
 	$\pi(n)$ as the number of primes less than or equal to $n$, $\pi_2(n)$ as the number of twin primes less than or equal to $n$, $F_{k}(x)$ as the number of times that $p_k=x$ for every $6 \leq k \leq n$. Then, the following relationships hold: $\pi(n) = F_n(3)+1$, and $\pi_2(n) =F_n(3)-F_n(5)$
 
- Compile: g++ PrimePi_Final.cc -o PrimePi_Final
+ Compile: g++ Goldbach_128bits.cc.cc -o Goldbach_128bits -lz
 
- Run: ./PrimePi_Final 10000000 > result_10000000.txt
+ Run: ./Goldbach_128bits 10000000 result_10000000.gz
         
 
 
