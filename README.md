@@ -14,7 +14,7 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  Therefore, $\pi(1000000) = F_{1000000}(3)+1 = 78498$,   $\pi_2(1000000)=F_{1000000}(3) - F_{1000000}(5) = 8169$ and $\delta_6(1000000)=F_{1000000}(7)=62185$.
  
         
-
+PS.: $F_n(5)$ is the number of primes $p$ such that $p+2$ is not a prime.
 
 
 
