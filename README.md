@@ -5,7 +5,10 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
 
  Compile: g++ Goldbach_128bits.cc -o Goldbach_128bits -lz
 
- Run: ./Goldbach_128bits 10000000 result_10000000.gz
+ Run: ./Goldbach_128bits 1000000 result_1000000.gz
+
+ Frequencies: python Goldbach_freq.py result_1000000.gz 1000000
+ 
         
 
 
