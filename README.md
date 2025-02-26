@@ -8,6 +8,10 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  Run: ./Goldbach_128bits 1000000 result_1000000.gz
 
  Frequencies: python Goldbach_freq.py result_1000000.gz 1000000
+
+ Output: $F_{1000000}(3)=78497$ and $F_{1000000}(5)=70328$
+ 
+ Therefore, $\pi(1000000) = F_{1000000}(3)+1 = 78498$ and $\pi_2(1000000)=F_{1000000}(3) - F_{1000000}(5) = 8169$
  
         
 
