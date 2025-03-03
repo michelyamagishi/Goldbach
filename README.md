@@ -1,7 +1,7 @@
 Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It asserts that every even integer,
  $n\geq 2$ can be expressed as the sum of two prime numbers. Assuming GC holds true, then for any even integer $n$, there exist prime 
  numbers $p$ and $q$ such that $n = p + q$. Let $p_n$ be the smallest prime number for which $q_n= n-p_n$ is also a prime. Define the following functions:
-	$\pi(n)$ as the number of primes less than or equal to $n$, $\pi_2(n)$ as the number of twin primes less than or equal to $n$, $\delta_{6}(n)$ as the number of primes $p$ that $q-p \geq 6$, where $q$ is the next prime after $p$, $F_{k}(x)$ as the number of times that $p_k=x$ for every $6 \leq k \leq n$. Then, the following relationships hold: $\pi(n) = F_n(3)+1$, $\pi_2(n) =F_n(3)-F_n(5)$ and $\delta_6(n) = F_n(7)$
+	$\pi(n)$ as the number of primes less than or equal to $n$, $\pi_2(n)$ as the number of twin primes less than or equal to $n$, $\delta_{6}(n)$ as the number of primes $p$ that $q-p \geq 6$, where $q$ is the next prime after $p$, $F_{n}(x)$ as the number of times that $p_k=x$ for every $6 \leq k \leq n$. Then, the following relationships hold: $\pi(n) = F_n(3)+1$, $\pi_2(n) =F_n(3)-F_n(5)$ and $\delta_6(n) = F_n(7)$
 
  Compile: g++ Goldbach_optimize.cc -o Goldbach_optimize -lz
 
