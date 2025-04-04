@@ -1,3 +1,7 @@
+Goldbach's Conjecture and how to calculate $\pi(n)$ and $\pi_2(n)$
+
+-----------------------------------------------------
+
 Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It asserts that every even integer,
  $n\geq 4$ can be expressed as the sum of two prime numbers. Assuming GC holds true, then for any even integer $n$, there exist prime 
  numbers $p$ and $q$ such that $n = p + q$. Let $p_n$ be the smallest prime number for which $q_n= n-p_n$ is also a prime. Define the following functions:
@@ -74,6 +78,7 @@ Simple Example:
 In this example, $F_{50}(3) = 14$ and $F_{50}(5) = 7$.
 Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(5) = 14 - 7 = 7$.
 
+cite: https://doi.org/10.13140/RG.2.2.22119.76963
 ---------------------------------------------
 
 
