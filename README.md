@@ -3,6 +3,8 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  numbers $p$ and $q$ such that $n = p + q$. Let $p_n$ be the smallest prime number for which $q_n= n-p_n$ is also a prime. Define the following functions:
 	$\pi(n)$ as the number of primes less than or equal to $n$, $\pi_2(n)$ as the number of twin primes less than or equal to $n$, $\delta_{6}(n)$ as the number of primes $p$ that $q-p \geq 6$, where $q$ is the next prime after $p$, $F_{n}(x)$ as the number of times that $p_k=x$ for every $k$, where $6 \leq k \leq n$. Then, the following relationships hold: $\pi(n) = F_n(3)+1$, $\pi_2(n) =F_n(3)-F_n(5)$ and $\delta_6(n) = F_n(7)$
 
+-----------------------------------------------------
+
  Compile: g++ Goldbach_optimize.cc -o Goldbach_optimize -lz
 
  Run: ./Goldbach_optimize 1000000 result_1000000.gz
@@ -15,6 +17,8 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  
         
 PS.: $F_n(5)$ is the number of primes $p \leq n$ such that $p+2$ is not a prime.
+
+------------------------------------------------------
 
 Simple Example:
 
