@@ -32,6 +32,8 @@ PS.: $F_n(5)$ is the number of primes $p \leq n$ such that $p+2$ is not a prime.
 
 Simple Example:
 
+n = $p_n$ + $q_n$
+
 4 = 2 + 2,
 
 6 = 3 + 3,
