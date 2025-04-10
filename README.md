@@ -89,13 +89,5 @@ Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(
 cite: https://doi.org/10.13140/RG.2.2.22119.76963
 
 
----------------------------------------------
-
-
-
-Using the well-known fact that every prime number, except $2$ and $3$, is adjacent to a multiple of $6$ ($p=6k \pm 1 $, where $p$ is prime and $k \ge 1$ is an integer), we have developed a simple and fast algorithm to identify the prime numbers that form the sum. Take a look at https://oeis.org/A377540
-
-
-python Goldbach.py <even number greater than 6>
 
 
