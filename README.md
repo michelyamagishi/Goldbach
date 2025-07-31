@@ -118,3 +118,13 @@ I checked my figures, and there it was—plain, neat, and quietly satisfying.
 And so the “discovery” arrived. No stroke of genius—only two stray dreams, 
 a modest little algorithm, and the patience to sit with the numbers until 
 they whispered their secret.
+
+However, I cannot state with certainty whether this constitutes a novel result. 
+Its simplicity is such that it seems almost a miracle that it has not already 
+been discovered. My attempts to locate a reference were unsuccessful. 
+I subsequently consulted several number theorists, but those who replied 
+were likewise unfamiliar with it. 
+
+My most reasonable conjecture is that it may have been established 
+approximately two centuries ago and now lies forgotten, perhaps preserved 
+only in a neglected library, recorded in Latin.
