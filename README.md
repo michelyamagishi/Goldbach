@@ -120,7 +120,7 @@ a modest little algorithm, and the patience to sit with the numbers until
 they whispered their secret.
 
 However, I cannot state with certainty whether this constitutes a novel result. 
-Its simplicity is such that it seems almost a miracle that it has not already 
+Its simplicity (and Beauty!) is such that it seems almost a miracle that it has not already 
 been discovered. My attempts to locate a reference were unsuccessful. 
 I subsequently consulted several number theorists, but those who replied 
 were likewise unfamiliar with it. 
