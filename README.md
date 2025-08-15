@@ -88,6 +88,9 @@ Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(
 
 cite: https://doi.org/10.13140/RG.2.2.22119.76963
 
+Watch the video of an explanation given by NotebookLM: https://youtu.be/yxCsCs-waCo?si=5tV-iuTAeyshMqMK
+
+
 --------------------------------------------------
 
 Many people have asked me: how does your discovery come about? 
