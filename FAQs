@@ -1,0 +1,33 @@
+Many people have asked me: how does your discovery come about? 
+I wish I could claim that it was the fruit of a towering intellect and 
+long years spent labouring over Goldbach’s Conjecture—that I endured 
+endless nights of calculation, frustration and false starts, until at 
+last a flash of insight broke through. But the truth is far quieter than that.
+
+It began less than a year ago, with a dream. The problem presented itself not as a revelation, 
+but as the faintest suggestion, lodged somewhere at the back of my mind. The next morning, 
+I recalled a familiar fact: every prime p>3 is congruent to either 1 or −1 modulo 6. With that 
+simple observation in hand, I wrote a very simple, quick algorithm to compute the minimal Goldbach partitions. 
+Then I simply let the numbers run their course. For weeks, I did little more than watch, noting their quiet
+rhythms and half-formed patterns. When a few sequences became apparent, I submitted them to the OEIS—not 
+with any expectation, but merely because they struck me as curious.
+
+Then came the second dream, which provided the true glimmer of understanding. 
+In it, I saw that whenever the number 3 appeared as the least prime in a partition, 
+a new prime seemed to join the endless procession of the primes. That simple dream, 
+unlikely as it sounds, was the key. Afterwards, I noticed the subtle thread 
+linking π(n) and π₂(n) with the minimal Goldbach partitions. 
+I checked my figures, and there it was—plain, neat, and quietly satisfying.
+
+And so the “discovery” arrived. No stroke of genius—only two stray dreams, 
+a modest little algorithm, and the patience to sit with the numbers until they whispered their secret.
+
+However, I cannot state with certainty whether this constitutes a novel result. 
+Its simplicity (and Beauty!) is such that it seems almost a miracle that it has not already 
+been discovered. My attempts to locate a reference were unsuccessful. I subsequently consulted 
+several number theorists, but those who replied were likewise unfamiliar with it.
+
+My most reasonable conjecture is that it may have been established approximately two centuries ago 
+and now lies forgotten, perhaps preserved only in a neglected library, recorded in Latin.
+
+Campinas Jul 31, 2025
