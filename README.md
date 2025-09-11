@@ -131,3 +131,5 @@ were likewise unfamiliar with it.
 My most reasonable conjecture is that it may have been established 
 approximately two centuries ago and now lies forgotten, perhaps preserved 
 only in a neglected library, recorded in Latin.
+
+Campinas Jul 31, 2025
