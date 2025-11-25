@@ -86,6 +86,10 @@ n = $p_n$ + $q_n$
 In this example, $F_{50}(3) = 14$ and $F_{50}(5) = 7$.
 Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(5) = 14 - 7 = 7$.
 
+Maybe you should go with the polynomial approach instead. Take a look at: https://doi.org/10.13140/RG.2.2.35628.12162
+
+------------
 cite: https://doi.org/10.13140/RG.2.2.22119.76963
+
 
 Watch the video of an explanation given by NotebookLM: https://www.youtube.com/watch?v=bHPlp-CiYO4
