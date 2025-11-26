@@ -90,7 +90,7 @@ Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(
 
 Maybe you should go with the polynomial approach instead. Take a look at: https://doi.org/10.13140/RG.2.2.35628.12162
 
-# Counting Prime Polinomy
+# Counting Prime Polynomial
 
 **Author:** Michel Eduardo Beleza Yamagishi
 
