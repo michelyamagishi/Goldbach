@@ -94,8 +94,6 @@ Maybe you should go with the polynomial approach instead. Take a look at: https:
 
 **Author:** Michel Eduardo Beleza Yamagishi
 
-## Abstract
-
 This paper introduces the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the minimal prime in a Goldbach partition of the even integer $k$. We derive explicit formulas for the coefficients $c_m$ of $P(n) = \sum_m c_m x^m$, where the sum is over primes $m \geq 2$.
 
 For $m = 2$, the coefficient is $c_2 = 1$ if $n \geq 4$, and 0 otherwise. For odd primes $m$, $c_m$ counts the number of primes $r$ in the range $3 \leq r \leq n - m$ such that no smaller prime $p < m$ yields a prime pair $r + (m - p)$. This is formalized via inclusion-exclusion: $c_m = \sum_{A \subseteq S} (-1)^{|A|} N_A(L)$, with $S = \mathbb{P} \cap (2, m)$, $L = n - m$, and $N_A(L)$ the count of odd primes $r \leq L$ where $r + (m - p)$ is prime for each $p \in A$.
