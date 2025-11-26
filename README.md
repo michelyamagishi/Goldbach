@@ -92,7 +92,6 @@ Maybe you should go with the polynomial approach instead. Take a look at: https:
 
 # Counting Prime Polynomial
 
-**Author:** Michel Eduardo Beleza Yamagishi
 
 This paper introduces the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the minimal prime in a Goldbach partition of the even integer $k$. We derive explicit formulas for the coefficients $c_m$ of $P(n) = \sum_m c_m x^m$, where the sum is over primes $m \geq 2$.
 
