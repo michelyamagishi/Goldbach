@@ -1,4 +1,4 @@
-Goldbach's Conjecture and how to calculate $\pi(n)$ and $\pi_2(n)$
+# Goldbach's Conjecture and how to calculate $\pi(n)$ and $\pi_2(n)$
 
 -----------------------------------------------------
 
@@ -30,7 +30,7 @@ PS.: $F_n(5)$ is the number of primes $p \leq n$ such that $p+2$ is not a prime.
 
 ------------------------------------------------------
 
-Simple Example:
+# Simple Example:
 
 n = $p_n$ + $q_n$
 
