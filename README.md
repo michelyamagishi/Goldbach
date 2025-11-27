@@ -90,7 +90,7 @@ Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(
 
 Maybe you should go with the polynomial approach instead. Take a look at: https://doi.org/10.13140/RG.2.2.35628.12162
 
-# Prime Counting Polynomials P(n)
+# Prime Counting Goldbach Polynomials  P(n)
 
 
 This paper introduces the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the minimal prime in a Goldbach partition of the even integer $k$. We derive explicit formulas for the coefficients $c_m$ of $P(n) = \sum_m c_m x^m$, where the sum is over primes $m \geq 2$.
