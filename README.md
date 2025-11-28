@@ -168,6 +168,10 @@ Let $z_{n,k}$ be the k-th root of the polynomial $P(n)$. Then for almost all $k$
   <img src="roots_p500000.png" alt="Roots of P(10000)" width="400"/>
 </p>
 
+## Maximal Prime Polynomial
+
+By the way, the zeros of the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
+
 ------------
 cite: https://doi.org/10.13140/RG.2.2.22119.76963
 
