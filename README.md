@@ -216,6 +216,8 @@ For even $n \ge 8$,
 = \pi(n-3) + \pi(n-5) + H(n) - \frac{n}{2}.
 ```
 
+#### Python Code
+python VerifyFormula_H.py 10000
 
 ------------
 cite: https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721
