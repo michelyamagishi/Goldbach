@@ -177,8 +177,47 @@ Let $z_{n,k}$ be the k-th root of the polynomial $P(n)$. Then for almost all $k$
 
 By the way, the zeros of the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
 
-------------
-cite: https://doi.org/10.13140/RG.2.2.22119.76963
+## Twin Prime and Goldbach Conjectures: A Quantitative Link
 
+
+Assuming the **Goldbach conjecture**, for even $k \ge 4$, let $p(k)$ be the smallest prime such that $(k - p(k))$ is prime.
+Define the polynomial
+
+```math
+P(n) = \sum_{\substack{4 \le k \le n \\ k \text{ even}}} x^{p(k)}
+     = \sum_{\substack{m \text{ prime} \\ m \ge 2}} c_m(n) x^m,
+```
+
+where $c_m(n)$ counts the even $k \le n$ with $p(k) = m$.
+
+The author's explicit formulas include:
+
+```math
+c_3(n) = \pi(n-3) - 1,
+\qquad
+c_5(n) = \pi(n-5) - 1 - \pi_2(n-5).
+```
+
+The sum of coefficients is $n/2 - 1$ for even $n$.
+Let
+
+```math
+H(n) = \sum_{m \ge 7,\; m \text{ prime}} c_m(n).
+```
+
+---
+
+### Theorem
+
+For even $n \ge 8$,
+
+```math
+\pi_2(n-5)
+= \pi(n-3) + \pi(n-5) + H(n) - \frac{n}{2}.
+```
+
+
+------------
+cite: https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721
 
 Watch the video of an explanation given by NotebookLM: https://www.youtube.com/watch?v=bHPlp-CiYO4
