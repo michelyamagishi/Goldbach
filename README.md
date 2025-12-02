@@ -1,4 +1,4 @@
-# For even $n \ge 8$, $\pi_2(n-5) = \pi(n-3) + \pi(n-5) + H(s) - n/2$
+# For even $n \ge 8$, $\pi_2(n-5) = \pi(n-3) + \pi(n-5) + H(n) - n/2$
 
 
 
