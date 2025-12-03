@@ -221,6 +221,19 @@ For even $n \ge 8$,
 ### Python Code
 python VerifyFormula_H.py 10000
 
+## Generalization
+
+For integer $k \geq 1$ and even $n \geq 8 + 2k$,
+		
+$\pi_2(n-5) - \pi_2(n - 5 - 2k) = \bigl[ \pi(n-3) - \pi(n - 3 - 2k) \bigr] + \bigl[ \pi(n-5) - \pi(n - 5 - 2k) \bigr] + H(n) - H(n - 2k) - k.$	
+		
+or
+		
+$\Delta_{\pi_2} = \Delta_{\pi_a} + \Delta_{\pi_b} + \Delta_{H} - k$
+		
+		
+where $\Delta_{\pi_2}= \pi_2(n-5) - \pi_2(n - 5 - 2k)$ , $\Delta_{\pi_a}=\pi(n-3) - \pi(n - 3 - 2k)$, $\Delta_{\pi_b} = \pi(n-5) - \pi(n - 5 - 2k)$ and $\Delta_H =  H(n) - H(n - 2k)$.
+
 ------------
 cite: https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721
 
