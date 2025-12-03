@@ -122,7 +122,7 @@ These results offer a novel framework for analyzing Goldbach partitions through 
 
 ## How to Use the Goldbach Polynomial Generator Goldbach_polynomial.py
 
-Run the script from the command line with an even integer \( n \geq 4 \):
+Run the script from the command line with an even integer $n \geq 4$:
 
 ```
 python goldbach_polynomial.py <even_number_n>
