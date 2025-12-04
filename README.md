@@ -229,7 +229,7 @@ $\pi_2(n-5) - \pi_2(n - 5 - 2k) = \bigl[ \pi(n-3) - \pi(n - 3 - 2k) \bigr] + \bi
 		
 or
 		
-### $\Delta_{\pi_2} = \Delta_{\pi_a} + \Delta_{\pi_b} + \Delta_{H} - k$
+## $\Delta_{\pi_2} = \Delta_{\pi_a} + \Delta_{\pi_b} + \Delta_{H} - k$
 		
 		
 where $\Delta_{\pi_2}= \pi_2(n-5) - \pi_2(n - 5 - 2k)$ , $\Delta_{\pi_a}=\pi(n-3) - \pi(n - 3 - 2k)$, $\Delta_{\pi_b} = \pi(n-5) - \pi(n - 5 - 2k)$ and $\Delta_H =  H(n) - H(n - 2k)$.
