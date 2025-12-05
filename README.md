@@ -225,7 +225,7 @@ python VerifyFormula_H.py 10000
 
 For integer $k \geq 1$ and even $n \geq 8 + 2k$,
 		
-$\pi_2(n-5) - \pi_2(n - 5 - 2k) = \bigl[ \pi(n-3) - \pi(n - 3 - 2k) \bigr] + \bigl[ \pi(n-5) - \pi(n - 5 - 2k) \bigr] + H(n) - H(n - 2k) - k.$	
+$\pi_2(n-5) - \pi_2(n - 5 - 2k) = \bigl[ \pi(n-3) - \pi(n - 3 - 2k) \bigr] + \bigl[ \pi(n-5) - \pi(n - 5 - 2k) \bigr] + \bigl[H(n) - H(n - 2k)\bigr] - k.$	
 		
 or
 		
