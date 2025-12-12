@@ -120,6 +120,8 @@ For a larger example, take $n = 50$. The polynomial is $P(50) = x^2 + 14x^3 + 7x
 
 These results offer a novel framework for analyzing Goldbach partitions through generating functions, with potential implications for prime distribution studies.
 
+Coefficients of Goldbach Polynomials: https://oeis.org/A391043
+
 ## How to Use the Goldbach Polynomial Generator Goldbach_polynomial.py
 
 Run the script from the command line with an even integer $n \geq 4$:
