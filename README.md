@@ -177,6 +177,16 @@ Let $z_{n,k}$ be the k-th root of the polynomial $P(n)$. Then for almost all $k$
   <img src="roots_p500000.png" alt="Roots of P(10000)" width="400"/>
 </p>
 
+Here is a version tailored to a **computational / numerical / data-oriented audience**, appropriate for GitHub users who care about algorithms, experiments, and diagnostics more than proofs:
+
+---
+
+### Goldbach polynomials
+
+This approach translates additive questions about prime numbers into concrete, finite polynomials whose coefficients are derived from prime data, and studies the location of their complex zeros as numerical invariants. An analytic result shows that the distance between the point (z=1) and the nearest zero is tightly controlled by how much coefficient mass lies at small indices, making this “spectral gap” a sensitive statistic for detecting structural changes in the data. Under standard probabilistic models for primes (such as Hardy–Littlewood heuristics), the framework predicts a specific scaling law for this gap, which can be tested numerically. Extensive computations show that polynomials built from actual prime data follow the predicted scaling, while synthetic or perturbed models exhibit visibly different spectral behavior. The goal is not to resolve prime conjectures, but to provide a reproducible computational diagnostic for comparing prime models and validating heuristic assumptions through spectral data.
+
+
+
 ## Maximal Prime Polynomial
 
 By the way, the zeros of the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
