@@ -294,6 +294,6 @@ Note that for $k=1$, this reduces to: $\pi_2(n-5) - \pi_2(n-7) = \pi(n-3) - \pi(
 
 
 ------------
-cite: https://doi.org/10.5281/zenodo.17913888, https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721
+cite: https://doi.org/10.5281/zenodo.17913888, https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721, https://doi.org/10.13140/RG.2.2.32286.60487
 
 Watch the video of an explanation given by NotebookLM: https://www.youtube.com/watch?v=bHPlp-CiYO4
