@@ -212,7 +212,7 @@ Here:
 
 ### Remarks
 
-- Both $ P_n(z) $ and $ P_n^{(1)}(z) $ are finite polynomials.
+- Both $P_n(z)$ and $P_n^{(1)}(z)$ are finite polynomials.
 - The weighted version replaces purely additive prime data with logarithmically weighted data.
 - The logarithmic weight matches the weight appearing in the logarithmic derivative of the Riemann zeta function.
 - Let $z_{n,k}$ be the k-th root of the polynomial $P^{(1)}(n)$. Then $\hat{z_{n,k}} = \frac{1}{1-z_{n,k}}$ has $\Re(\hat{z_{n,k}}) = \frac{1}{2}$
