@@ -191,6 +191,35 @@ This approach translates additive questions about prime numbers into concrete, f
 
 By the way, the zeros of the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
 
+
+## Weighted Goldbach Polynomial
+
+This section defines the **weighted Goldbach polynomial**, a finite polynomial constructed from Goldbach representations of even integers, with logarithmic prime weights.
+
+---
+
+
+### Log-Weighted Goldbach Polynomial
+
+The **log-weighted Goldbach polynomial** is defined by
+$$P^{(1)}(n):=\sum_{p,prime}^n c_p(n) \log(p) x^p.$$
+
+Here:
+- each prime exponent $p$ is weighted by $\log( p )$,
+- the weights introduce multiplicative prime structure into the polynomial.
+
+---
+
+### Remarks
+
+- Both $ P_n(z) $ and $ P_n^{(1)}(z) $ are finite polynomials.
+- The weighted version replaces purely additive prime data with logarithmically weighted data.
+- The logarithmic weight matches the weight appearing in the logarithmic derivative of the Riemann zeta function.
+- Let $z_{n,k}$ be the k-th root of the polynomial $P^{(1)}(n)$. Then $\hat{z_{n,k}} = \frac{1}{1-z_{n,k}}$ has $\Re(\hat{z_{n,k}}) = \frac{1}{2}$
+
+---
+
+
 ## Twin Prime and Goldbach Conjectures: A Quantitative Link
 
 
