@@ -14,7 +14,7 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  numbers $p$ and $q$ such that $n = p + q$. Let $p_n$ be the smallest prime number for which $q_n= n-p_n$ is also a prime. Define the following functions:
 	$\pi(n)$ as the number of primes less than or equal to $n$, $\pi_2(n)$ as the number of twin primes less than or equal to $n$, $\delta_{6}(n)$ as the number of primes $p$ that $q-p \geq 6$, where $q$ is the next prime after $p$, $F_{n}(x)$ as the number of times that $p_k=x$ for every $k$, where $6 \leq k \leq n$, in other words, $F_{n}(x)$ counts how often a prime $x$ appears as the smallest prime in the Goldbach partition for even integers $k$ within the range $6 \leq k \leq n$. Then, the following relationships hold: 
  
- (i) $\pi(n) = F_n(3)+1$, 
+ (i) $\pi(n) = F_n(3)+1$, (on march 11th 2026, I've finally found a reference https://dms.umontreal.ca/~andrew/PDF/Goldbach1.pdf)
  
  (ii) $\pi_2(n) =F_n(3)-F_n(5)$ and 
  
