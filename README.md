@@ -16,11 +16,13 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  
  (i) $\pi(n) = F_n(3)+1$, (*) 
  
- (ii) $\pi_2(n) =F_n(3)-F_n(5)$ and 
+ (ii) $\pi_2(n) =F_n(3)-F_n(5)$ and (**)
  
  (iii) $\delta_6(n) = F_n(7)$
-
+ 
 (*) On March 11th, 2026, I've finally found a reference published back in 1989 https://dms.umontreal.ca/~andrew/PDF/Goldbach1.pdf
+
+(**) Although this formula did not appear in his 1989 paper, Professor Granville said in a personal communication (March 21st, 2026), “That is how we came up with our estimates, through these kinds of identities.” Therefore, Granville et al. should be credited for this identity as well.
 
 -----------------------------------------------------
 
