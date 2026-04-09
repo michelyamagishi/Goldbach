@@ -308,7 +308,7 @@ python VerifyFormula_H.py 10000
 | 1795544250 | 5795582  | 88653003 | 88653003 | 726261701 | 897772125 | 5795582   | Yes             |
 | 1795544252 | 5795582  | 88653003 | 88653003 | 726261702 | 897772126 | 5795582   | Yes             |
 
-## Generalization
+## Generalization (Conservation Law of Prime Numbers)
 
 For integer $k \geq 1$ and even $n \geq 8 + 2k$,
 		
