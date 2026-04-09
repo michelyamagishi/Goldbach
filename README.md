@@ -195,6 +195,10 @@ This approach translates additive questions about prime numbers into concrete, f
 
 By the way, the zeros of the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
 
+## Generalized Prime Polynomial
+
+$Q_n(x,y) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)} y^{k-p(k)}$
+
 
 ## Weighted Goldbach Polynomial
 
