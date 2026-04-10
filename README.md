@@ -351,7 +351,76 @@ $$
 
 In this sense, the conservation law of primes can be viewed as a **discrete Noether-style law**: translation invariance in arithmetic time yields an exactly conserved Goldbach balance.
 
+## Conserved balance and one-step continuity law
 
+For even $n \ge 8$, define the corrected balance
+
+$$
+C(n):=\pi_2(n-5)-\pi(n-3)-\pi(n-5)-H(n)+\frac{n}{2}.
+$$
+
+By the theorem
+
+$$
+\pi_2(n-5)=\pi(n-3)+\pi(n-5)+H(n)-\frac{n}{2},
+$$
+
+we have
+
+$$
+C(n)=0
+$$
+
+for every even $n \ge 8$.
+
+Now define the one-step discrete difference on the even lattice by
+
+$$
+\Delta C(n):=C(n)-C(n-2).
+$$
+
+Then $C$ satisfies the one-step continuity law
+
+$$
+\Delta C(n)=0 \qquad (n\ge 10,\; n \text{ even}).
+$$
+
+Indeed,
+
+$$
+\begin{aligned}
+C(n)-C(n-2)
+&=\bigl[\pi_2(n-5)-\pi_2(n-7)\bigr] \\
+&\quad-\bigl[\pi(n-3)-\pi(n-5)\bigr]
+-\bigl[\pi(n-5)-\pi(n-7)\bigr] \\
+&\quad-\bigl[H(n)-H(n-2)\bigr]+1.
+\end{aligned}
+$$
+
+Using the $k=1$, conservation law
+
+$$
+\pi_2(n-5)-\pi_2(n-7)=
+\bigl[\pi(n-3)-\pi(n-5)\bigr]
++
+\bigl[\pi(n-5)-\pi(n-7)\bigr]
++
+\bigl[H(n)-H(n-2)\bigr]-1,
+$$
+
+all terms cancel, giving
+
+$$
+C(n)-C(n-2)=0.
+$$
+
+Thus $C$ is conserved from one even step to the next. In arithmetic time $t=n/2$, if $C_t:=C(2t)$, then
+
+$$
+C_t-C_{t-1}=0.
+$$
+
+This is the discrete continuity law for the Goldbach balance.
 
 
 ------------
