@@ -422,6 +422,48 @@ $$
 
 This is the discrete continuity law for the Goldbach balance.
 
+## A cousin-prime identity
+
+The coefficient formulas for the Goldbach polynomial suggest that the twin-prime identity is only the first member of a broader family. In particular, for even $n \ge 10$, the formula for $c_7(n)$ yields an identity for cousin primes.
+
+Define
+
+$$
+H_{11}(n):=\sum_{\substack{m \ge 11\\ m \text{ prime}}} c_m(n),
+$$
+
+so that
+
+$$
+\frac{n}{2}-1 = c_2(n)+c_3(n)+c_5(n)+c_7(n)+H_{11}(n),
+\qquad c_2(n)=1.
+$$
+
+
+Using
+
+$$
+c_3(n)=\pi(n-3)-1,
+\qquad
+c_5(n)=\pi(n-5)-1-\pi_2(n-5),
+$$
+
+and, for even $n \ge 10$,
+
+$$
+c_7(n)=\pi(n-7)-\pi_2(n-7)-\pi_4(n-7),
+$$
+
+we obtain
+
+$$
+\pi_4(n-7)=
+\pi(n-3)+\pi(n-5)+\pi(n-7)+H_{11}(n)
+-\pi_2(n-5)-\pi_2(n-7)-\frac{n}{2}.
+$$
+
+This gives a cousin-prime analogue of the twin-prime / Goldbach identity. It suggests that higher coefficient channels of the Goldbach polynomial may encode further prime-gap counting functions, leading to a broader family of conservation-type identities.
+
 
 ------------
 cite: https://doi.org/10.5281/zenodo.17913888, https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721, https://doi.org/10.13140/RG.2.2.32286.60487
