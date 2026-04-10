@@ -329,6 +329,30 @@ where $\Delta_{\pi_2}= \pi_2(n-5) - \pi_2(n - 5 - 2k)$ , $\Delta_{\pi_a}=\pi(n-3
 
 Note that for $k=1$, this reduces to: $\pi_2(n-5) - \pi_2(n-7) = \pi(n-3) - \pi(n-7) + H(n) - H(n-2) - 1$
 
+## Discrete Noether-style theorem
+
+Let $t = n/2$ denote the discrete **arithmetic time** indexed by even integers. The Goldbach bookkeeping is homogeneous under the shift $n \mapsto n+2$ (equivalently, $t \mapsto t+1$ ): each step adds one new even number, while the coefficient-classification rules remain unchanged. Hence the linear background growth can be removed, and the corrected balance
+
+$$
+C(n)=\pi_2(n-5)-\pi(n-3)-\pi(n-5)-H(n)+\frac{n}{2}
+$$
+
+is invariant under discrete translations on the even lattice, that is,
+
+$$
+C(n)=C(n-2k)
+$$
+
+for all admissible $k \ge 1$. Equivalently,
+
+$$
+k=\Delta_{\pi_a}+\Delta_{\pi_b}+\Delta_H-\Delta_{\pi_2}.
+$$
+
+In this sense, the conservation law of primes can be viewed as a **discrete Noether-style law**: translation invariance in arithmetic time yields an exactly conserved Goldbach balance.
+
+
+
 
 ------------
 cite: https://doi.org/10.5281/zenodo.17913888, https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721, https://doi.org/10.13140/RG.2.2.32286.60487
