@@ -464,6 +464,7 @@ $$
 
 This gives a cousin-prime analogue of the twin-prime / Goldbach identity. It suggests that higher coefficient channels of the Goldbach polynomial may encode further prime-gap counting functions, leading to a broader family of conservation-type identities.
 
+PS.:  g++ -O3 -march=native -DNDEBUG -std=c++20 Cousin_verifier.cpp -o Cousin_verifier
 
 ------------
 cite: https://doi.org/10.5281/zenodo.17913888, https://doi.org/10.13140/RG.2.2.22119.76963 , https://doi.org/10.13140/RG.2.2.15449.58721, https://doi.org/10.13140/RG.2.2.32286.60487
