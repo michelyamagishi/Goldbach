@@ -224,7 +224,8 @@ Here:
 - Both $P_n(x)$ and $P^{(1)}_n(x)$ are finite polynomials.
 - The weighted version replaces purely additive prime data with logarithmically weighted data.
 - The logarithmic weight matches the weight appearing in the logarithmic derivative of the Riemann zeta function.
-- Let $z_{n,k}$ be the k-th root of the polynomial $P^{(1)}_n(x)$ . Then $\hat{z_{n,k}} = \frac{1}{1-z_{n,k}}$ has $\Re(\hat{z_{n,k}}) = \frac{1}{2}$
+- Let $z_{n,k}$ be the k-th root of the polynomial $P^{(1)
+  }_n(x)$. Then $\hat{z_{n,k}} = \frac{1}{1-z_{n,k}}$ has $\Re(\hat{z_{n,k}}) = \frac{1}{2}$
 
 ---
 
