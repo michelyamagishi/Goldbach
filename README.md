@@ -101,10 +101,10 @@ Therefore, $\pi(50) = F_{50}(3) + 1 = 15$ and $\pi_{2}(50) = F_{50}(3) - F_{50}(
 
 Maybe you should go with the polynomial approach instead. Take a look at: https://doi.org/10.13140/RG.2.2.35628.12162
 
-## Prime Counting Goldbach Polynomials  P(n)
+## Prime Counting Goldbach Polynomials  $P_n(x)$
 
 
-This paper introduces the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the minimal prime in a Goldbach partition of the even integer $k$. We derive explicit formulas for the coefficients $c_m$ of $P(n) = \sum_m c_m x^m$, where the sum is over primes $m \geq 2$.
+This paper introduces the polynomial $P_n(x) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the minimal prime in a Goldbach partition of the even integer $k$. We derive explicit formulas for the coefficients $c_m$ of $P(n) = \sum_m c_m x^m$, where the sum is over primes $m \geq 2$.
 
 For $m = 2$, the coefficient is $c_2 = 1$ if $n \geq 4$, and 0 otherwise. For odd primes $m$, $c_m$ counts the number of primes $r$ in the range $3 \leq r \leq n - m$ such that no smaller prime $p < m$ yields a prime pair $r + (m - p)$. This is formalized via inclusion-exclusion: $c_m = \sum_{A \subseteq S} (-1)^{|A|} N_A(L)$, with $S = \mathbb{P} \cap (2, m)$, $L = n - m$, and $N_A(L)$ the count of odd primes $r \leq L$ where $r + (m - p)$ is prime for each $p \in A$.
 
@@ -162,9 +162,9 @@ python goldbach_polynomial.py <even_number_n>
    ```
    x^2 + 24x^3 + 15x^5 + 8x^7 + x^{19}
    ```
-### Roots of $P(n)$
+### Roots of $P_n(x)$
 
-$P(10000)= x^2 + 1228 x^3 + 1023 x^5 + 821 x^7 + 526 x^{11} + 382 x^{13} + 
+$P_{10000}(x)= x^2 + 1228 x^3 + 1023 x^5 + 821 x^7 + 526 x^{11} + 382 x^{13} + 
  	241 x^{17} + 235 x^{19} + 126 x^{23} + 81 x^{29} + 107 x^{31} + 47 x^{37} + 
  	33 x^{41} + 32 x^{43} + 24 x^{47} + 24 x^{53} + 11 x^{59} + 25 x^{61} + 
  	10 x^{67} + 3 x^{71} + 5 x^{73} + 5 x^{79} + 2 x^{83} + x^{97} + x^{103} + x^{127} + 
@@ -175,7 +175,7 @@ $P(10000)= x^2 + 1228 x^3 + 1023 x^5 + 821 x^7 + 526 x^{11} + 382 x^{13} +
 </p>
 
 
-Let $z_{n,k}$ be the k-th root of the polynomial $P(n)$. Then for almost all $k$, $z_{n,k}$ satisfy $|z_{n,k}| \to 1$ as $n \to \infty$ 
+Let $z_{n,k}$ be the k-th root of the polynomial $P_n(x)$. Then for almost all $k$, $z_{n,k}$ satisfy $|z_{n,k}| \to 1$ as $n \to \infty$ 
 
 <p align="center">
   <img src="roots_p500000.png" alt="Roots of P(10000)" width="400"/>
@@ -193,7 +193,7 @@ This approach translates additive questions about prime numbers into concrete, f
 
 ## Maximal Prime Polynomial
 
-By the way, the zeros of the polynomial $P(n) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
+By the way, the zeros of the polynomial $P_n(x) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{k-p(k)}$, where $p(k)$ denotes the smallest prime such that $k - p(k)$ is also prime, reflecting the maximal prime in a Goldbach partition of the even integer $k$, have the same property. 
 
 ## Generalized Prime Polynomial
 
