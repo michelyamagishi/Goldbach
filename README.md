@@ -210,7 +210,7 @@ This section defines the **weighted Goldbach polynomial**, a finite polynomial c
 ### Log-Weighted Goldbach Polynomial
 
 The **log-weighted Goldbach polynomial** is defined by
-$$P^{(1)}(n):=\sum_{p,prime}^n c_p(n) \log(p) x^p.$$
+$$P^{(1)}_n(x):=\sum_{p,prime}^n c_p(n) \log(p) x^p.$$
 
 Here:
 - each prime exponent $p$ is weighted by $\log( p )$,
@@ -220,10 +220,10 @@ Here:
 
 ### Remarks
 
-- Both $P(n)$ and $P^{(1)}(n)$ are finite polynomials.
+- Both $P_n(x)$ and $P^{(1)}_n(x)$ are finite polynomials.
 - The weighted version replaces purely additive prime data with logarithmically weighted data.
 - The logarithmic weight matches the weight appearing in the logarithmic derivative of the Riemann zeta function.
-- Let $z_{n,k}$ be the k-th root of the polynomial $P^{(1)}(n)$. Then $\hat{z_{n,k}} = \frac{1}{1-z_{n,k}}$ has $\Re(\hat{z_{n,k}}) = \frac{1}{2}$
+- Let $z_{n,k}$ be the k-th root of the polynomial $P^{(1)}_n(x)$. Then $\hat{z_{n,k}} = \frac{1}{1-z_{n,k}}$ has $\Re(\hat{z_{n,k}}) = \frac{1}{2}$
 
 ---
 
@@ -235,7 +235,7 @@ Assuming the **Goldbach conjecture**, for even $k \ge 4$, let $p(k)$ be the smal
 Define the polynomial
 
 ```math
-P(n) = \sum_{\substack{4 \le k \le n \\ k \text{ even}}} x^{p(k)}
+P_n(x) = \sum_{\substack{4 \le k \le n \\ k \text{ even}}} x^{p(k)}
      = \sum_{\substack{m \text{ prime} \\ m \ge 2}} c_m(n) x^m,
 ```
 
