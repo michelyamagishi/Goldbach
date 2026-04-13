@@ -110,14 +110,14 @@ For $m = 2$, the coefficient is $c_2 = 1$ if $n \geq 4$, and 0 otherwise. For od
 
 Simplified expressions are provided for small primes: for $m = 3$, $c_3 = \pi(n - 3) - 1$; for $m = 5$, $c_5 = \pi(n - 5) - 2 - (\pi_2(n - 5) - 1)$, where $\pi_2(y)$ counts twin primes up to $y$; and for $m = 7$, $c_7 = \pi(n - 7) - 2 - (\pi_2(n - 7) + \pi_4(n - 7) - 1) + [3 \leq n - 7]$, with $\pi_4(y)$ counting cousin primes up to $y$.
 
-To illustrate, consider $n = 30$. The polynomial is $P(30) = x^2 + 8x^3 + 4x^5 + x^7$. Using the formulas:  
+To illustrate, consider $n = 30$. The polynomial is $P_{30}(x) = x^2 + 8x^3 + 4x^5 + x^7$. Using the formulas:  
 - $c_2 = 1$ (since $n \geq 4$),  
 - $c_3 = \pi(27) - 1 = 9 - 1 = 8$,  
 - $c_5 = \pi(25) - 2 - (\pi_2(25) - 1) = 9 - 2 - (4 - 1) = 4$,  
 - $c_7 = \pi(23) - 2 - (\pi_2(23) + \pi_4(23) - 1) + 1 = 9 - 2 - (4 + 4 - 1) + 1 = 1$,  
 matching the explicit computation.
 
-For a larger example, take $n = 50$. The polynomial is $P(50) = x^2 + 14x^3 + 7x^5 + 2x^7$, with coefficients verified as:  
+For a larger example, take $n = 50$. The polynomial is $P_{50}(x) = x^2 + 14x^3 + 7x^5 + 2x^7$, with coefficients verified as:  
 - $c_3 = \pi(47) - 1 = 15 - 1 = 14$,  
 - $c_5 = \pi(45) - 2 - (\pi_2(45) - 1) = 14 - 2 - (6 - 1) = 7$,  
 - $c_7 = \pi(43) - 2 - (\pi_2(43) + \pi_4(43) - 1) + 1 = 14 - 2 - (6 + 6 - 1) + 1 = 2$.  
