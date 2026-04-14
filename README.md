@@ -197,7 +197,7 @@ By the way, the zeros of the polynomial $P_n(x) = \sum_{\substack{k=4 \\ k \text
 
 ## Generalized Prime Polynomial
 
-$Q_n(x,y) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)} y^{k-p(k)}$
+$G_n(x,y) = \sum_{\substack{k=4 \\ k \text{ even}}}^{n} x^{p(k)} y^{k-p(k)}$
 
 
 ## Weighted Goldbach Polynomial
