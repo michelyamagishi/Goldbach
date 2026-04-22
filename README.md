@@ -347,7 +347,7 @@ $$
 for all admissible $k \ge 1$. Equivalently,
 
 $$
-k=\Delta_{\pi_a}+\Delta_{\pi_b}+\Delta_H-\Delta_{\pi_2}.
+k=\Delta_{\pi(n-3)}+\Delta_{\pi(n-5)}+\Delta_H-\Delta_{\pi_2(n-5)}.
 $$
 
 In this sense, the conservation law of primes can be viewed as a **discrete Noether-style law**: translation invariance in arithmetic time yields an exactly conserved Goldbach balance.
