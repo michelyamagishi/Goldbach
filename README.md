@@ -175,7 +175,7 @@ $P_{10000}(x)= x^2 + 1228 x^3 + 1023 x^5 + 821 x^7 + 526 x^{11} + 382 x^{13} +
 </p>
 
 
-Let $z_{n,k}$ be the k-th root of the polynomial $P_n(x)$. Then for almost all $k$, $z_{n,k}$ satisfy $|z_{n,k}| \to 1$ as $n \to \infty$ 
+Let $z_{n,k}$ be the k-th nonzero root of the polynomial $P_n(x)$. Then for almost all $k$, $z_{n,k}$ satisfy $|z_{n,k}| \to 1$ as $n \to \infty$ 
 
 <p align="center">
   <img src="roots_p500000.png" alt="Roots of P(10000)" width="400"/>
