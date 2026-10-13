@@ -185,10 +185,6 @@ Here is a version tailored to a **computational / numerical / data-oriented audi
 
 ---
 
-### Goldbach polynomials
-
-This approach translates additive questions about prime numbers into concrete, finite polynomials whose coefficients are derived from prime data, and studies the location of their complex zeros as numerical invariants. An analytic result shows that the distance between the point (z=1) and the nearest zero is tightly controlled by how much coefficient mass lies at small indices, making this “spectral gap” a sensitive statistic for detecting structural changes in the data. Under standard probabilistic models for primes (such as Hardy–Littlewood heuristics), the framework predicts a specific scaling law for this gap, which can be tested numerically. Extensive computations show that polynomials built from actual prime data follow the predicted scaling, while synthetic or perturbed models exhibit visibly different spectral behavior. The goal is not to resolve prime conjectures, but to provide a reproducible computational diagnostic for comparing prime models and validating heuristic assumptions through spectral data.
-
 ## Understanding the roots of the Goldbach polynomial
 
 For even $n\ge8$, the minimal-prime Goldbach polynomial has the form
