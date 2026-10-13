@@ -181,7 +181,6 @@ Let $z_{n,k}$ be the k-th nonzero root of the polynomial $P_n(x)$. Then for almo
   <img src="roots_p500000.png" alt="Roots of P(10000)" width="400"/>
 </p>
 
-Here is a version tailored to a **computational / numerical / data-oriented audience**, appropriate for GitHub users who care about algorithms, experiments, and diagnostics more than proofs:
 
 ---
 
