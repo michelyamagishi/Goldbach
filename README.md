@@ -189,7 +189,152 @@ Here is a version tailored to a **computational / numerical / data-oriented audi
 
 This approach translates additive questions about prime numbers into concrete, finite polynomials whose coefficients are derived from prime data, and studies the location of their complex zeros as numerical invariants. An analytic result shows that the distance between the point (z=1) and the nearest zero is tightly controlled by how much coefficient mass lies at small indices, making this “spectral gap” a sensitive statistic for detecting structural changes in the data. Under standard probabilistic models for primes (such as Hardy–Littlewood heuristics), the framework predicts a specific scaling law for this gap, which can be tested numerically. Extensive computations show that polynomials built from actual prime data follow the predicted scaling, while synthetic or perturbed models exhibit visibly different spectral behavior. The goal is not to resolve prime conjectures, but to provide a reproducible computational diagnostic for comparing prime models and validating heuristic assumptions through spectral data.
 
+## Understanding the roots of the Goldbach polynomial
 
+For even $n\ge8$, the minimal-prime Goldbach polynomial has the form
+
+$$
+P_n(x)=x^2+a x^3+b x^5+c x^7+\cdots.
+$$
+
+Its coefficients count minimal Goldbach partitions. They are nonnegative integers, with $a\ge2$. A **root** is a number $z$ for which $P_n(z)=0$. A polynomial of degree $D$ has $D$ complex roots when repeated roots are counted with their multiplicities.
+
+### Start with the whole picture
+
+Factor out $x^2$:
+
+$$
+P_n(x)=x^2Q_n(x),
+\qquad Q_n(x)=1+ax+bx^3+cx^5+\cdots.
+$$
+
+This immediately explains several features of the roots:
+
+- **Zero is a double root.** The factor $x^2$ gives two roots at the origin. Since $Q_n(0)=1$, there is no additional root there.
+- **There are no positive real roots.** When $x>0$, every nonzero term of $P_n(x)$ is positive, so their sum cannot be zero.
+- **Nonreal roots come in conjugate pairs.** Because the coefficients are real, if $u+iv$ is a root, then $u-iv$ is also a root. In a complex-plane plot, these pairs are mirror images across the horizontal axis.
+
+A complex number $z=u+iv$ is plotted at the point $(u,v)$; its distance from the origin is its modulus $|z|$. Powers of a complex number can point in different directions and cancel, which allows nonreal roots even though the polynomial's coefficients are nonnegative.
+
+The repository's numerical plot for $n=10000$ illustrates this picture:
+
+![Numerical roots of the Goldbach polynomial for n = 10000](https://raw.githubusercontent.com/michelyamagishi/Goldbach/main/roots_p10000.png)
+
+Many nonreal roots in this example lie near the **unit circle**, the circle $|z|=1$. The conjugate symmetry is visible above and below the horizontal axis. This is a numerical observation for the plotted polynomial; it is not an assumption needed for the recovery argument below.
+
+### The single negative root
+
+Now consider the negative real axis. Write a negative root as $-r$, where $r>0$. The equation $Q_n(-r)=0$ becomes
+
+$$
+1=ar+br^3+cr^5+\cdots.
+$$
+
+The right-hand side increases strictly from zero to infinity, with derivative at least $a>0$. It therefore reaches $1$ exactly once. Thus **there is exactly one negative root**, and it is simple: it occurs only once.
+
+Together, these facts account for every root: two at zero, one negative, and $D-3$ nonreal roots, counting multiplicities. For example, the degree-seven polynomial $P_{30}$ has a double root at zero, one negative root, and two conjugate pairs of nonreal roots.
+
+The negative root also has a special location: **it is the nonzero root closest to the origin**. For any nonzero root $z$, the triangle inequality gives
+
+$$
+1=\left|az+bz^3+cz^5+\cdots\right|
+\le a|z|+b|z|^3+c|z|^5+\cdots.
+$$
+
+Since the expression on the right increases with $|z|$ and equals $1$ at $|z|=r$, every nonzero root satisfies $|z|\ge r$. Equality requires all nonzero summands to point along the negative real axis; the term $az$ then forces $z=-r$. Every other nonzero root is therefore strictly farther away.
+
+### Why this root determines all the coefficients
+
+The **exact negative root encodes the whole polynomial**. We can read its coefficients much like the digits of a number: take the integer part, remove it, and rescale to reveal the next digit.
+
+The essential ingredient is a coefficient bound. The coefficient of $x^2$ is exactly $1$, all other nonzero terms have odd prime exponents, and
+
+$$
+a=c_3(n)=\pi(n-3)-1\ge2,
+\qquad 0\le c_p(n)\le a.
+$$
+
+Here $\pi(y)$ counts primes up to $y$. For any odd prime $p$, each even integer $k$ counted by $c_p(n)$ gives a distinct odd prime $k-p\le n-p\le n-3$. There are exactly $a$ odd primes up to $n-3$, which explains the bound.
+
+### Read one coefficient at a time
+
+From the root equation $1=ar+br^3+cr^5+\cdots$, we have $ar\le1$, hence $r\le1/a$. Dividing that equation by $r$ gives
+
+$$
+\frac1r=a+br^2+cr^4+\cdots.
+$$
+
+**The entire tail after $a$ is smaller than one:**
+
+$$
+0\le br^2+cr^4+\cdots
+\le a(r^2+r^4+\cdots)
+=\frac{ar^2}{1-r^2}
+\le\frac{a}{a^2-1}
+\le\frac23<1.
+$$
+
+Therefore, the integer part of $1/r$ is exactly the first coefficient:
+
+$$
+a=\left\lfloor\frac1r\right\rfloor.
+$$
+
+Here $\lfloor t\rfloor$ means the greatest integer less than or equal to $t$.
+
+Now subtract $a$ and divide by $r^2$:
+
+$$
+\frac{1/r-a}{r^2}=b+cr^2+\cdots.
+$$
+
+The same bound shows that the tail after $b$ is smaller than one, so taking the integer part recovers $b$. Repeat to recover every later coefficient.
+
+### The complete recovery rule
+
+Let $d_j$ be the coefficient of $x^{2j+3}$, so $d_0=a$, $d_1=b$, $d_2=c$, and $d_3=0$ because $9$ is composite. Starting with $U_0=1/r$, use
+
+$$
+d_j=\lfloor U_j\rfloor,
+\qquad
+U_{j+1}=\frac{U_j-d_j}{r^2}.
+$$
+
+At each step:
+
+1. Take the integer part to recover the next coefficient.
+2. Subtract that coefficient.
+3. Divide the remainder by $r^2$ to reveal the next one.
+
+Include zero coefficients as you pass through the odd exponents $3,5,7,9,11,\ldots$. Stop when the **entire remainder is exactly zero**; a zero coefficient alone does not mean the polynomial has ended. The coefficient of $x^2$ is already known to be $1$, and all other even-power coefficients are zero.
+
+Every step uses only $r$ and coefficients already recovered. Thus two polynomials satisfying these conditions cannot share the same negative root unless all their coefficients agree.
+
+### Example: recovering $P_{30}(x)$
+
+For the example
+
+$$
+P_{30}(x)=x^2+8x^3+4x^5+x^7,
+$$
+
+the exact negative root $-r$ produces these steps:
+
+| Step | Value before taking the integer part | Recovered coefficient |
+| --- | --- | --- |
+| $U_0$ | $1/r=8+4r^2+r^4$ | $c_3=8$ |
+| $U_1$ | $(U_0-8)/r^2=4+r^2$ | $c_5=4$ |
+| $U_2$ | $(U_1-4)/r^2=1$ | $c_7=1$ |
+
+The next remainder is zero, so the reconstruction is complete. These are exact identities; rounded decimal approximations are unnecessary for this example.
+
+### Why “exact” matters
+
+Later coefficients affect increasingly small details of the root. A rounded root can change an integer-part calculation, so numerical reconstruction needs certified error bounds and sufficient precision. Recovering the whole polynomial from approximate data also requires a degree bound; $\deg P_n\le n/2$ provides one.
+
+The result establishes that the root encodes the polynomial. Finding that root accurately without already knowing the coefficients is a separate problem.
+
+The proof also applies unconditionally if possible Goldbach exceptions are omitted from the defining sum.
 
 ## Maximal Prime Polynomial
 
