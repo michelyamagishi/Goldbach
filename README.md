@@ -22,7 +22,7 @@ Goldbach’s Conjecture (GC) is a well-known unproven mathematical statement. It
  
 (*) On March 11th, 2026, I've finally found a reference published back in 1989 https://dms.umontreal.ca/~andrew/PDF/Goldbach1.pdf
 
-(**) Although this formula did not appear in his 1989 paper, Professor Granville said in a personal communication (March 21st, 2026), “That is how we came up with our estimates, through these kinds of identities.” Therefore, Granville et al. should be credited for this identity as well.
+(**) Although this formula did not appear in his 1989 paper, Professor Granville said in a personal communication (March 21st, 2026), *“That is how we came up with our estimates, through these kinds of identities.”* Therefore, Granville et al. should be credited for this identity as well.
 
 -----------------------------------------------------
 
